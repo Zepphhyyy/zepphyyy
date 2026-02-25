@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Object Identification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Challenge</h1>
+        <p class="score-info">Score: <span id="score">0</span> | Question <span id="current-question">1</span>/<span id="total-questions">0</span></p>
+    </header>
+    
+    <main>
+        <div id="quiz-container" class="quiz-container">
+            <div class="quiz-content">
+                <!-- Question Image -->
+                <div class="image-container">
+                    <img id="quiz-image" src="" alt="Question Image" class="quiz-image">
+                </div>
+                
+                <!-- Answer Options (2x2 Grid) -->
+                <div id="options-container" class="options-grid">
+                    <!-- Options will be loaded here by JavaScript -->
+                </div>
+                
+                <!-- Next Button -->
+                <button id="next-button" class="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
